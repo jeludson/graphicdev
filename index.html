@@ -3,108 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emmanuel | Custom Brand Identities</title>
+    <title>Emmanuel | Creative Visual Designer Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="nature-glow-container">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
+    <div class="nature-bg">
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-magenta"></div>
     </div>
 
     <nav class="navbar">
-        <div class="logo">okikiolagraphic<span>.</span></div>
-        <div class="nav-links">
-            <a href="#work" class="active">Selected Work</a>
-            <a href="https://wa.me/#" target="_blank" class="cta-btn">Let's Collab</a>
+        <a href="#" class="logo">okikiolagraphic<span>.</span></a>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+        <ul class="nav-links">
+            <li><a href="#work" class="nav-item">Selected Work</a></li>
+            <li><a href="#contact" class="nav-item">Connect</a></li>
+            <li><a href="https://wa.me/2347047586595" target="_blank" class="nav-cta">Let's Collab</a></li>
+        </ul>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <span class="badge">Visual Architect</span>
-            <h1>Crafting Visuals That <span class="gradient-text">Captivate</span></h1>
-            <p>I help brands stand out in crowded markets with custom identities, high-impact graphics, and strategic print designs.</p>
-            <div class="hero-actions">
-                <a href="#work" class="btn-primary">Explore Portfolio</a>
-                <a href="https://wa.me/#" target="_blank" class="btn-secondary">DM on WhatsApp</a>
+        <div class="hero-container">
+            <span class="badge"><i class="fa-solid fa-seedling"></i> Visual Identity Architect</span>
+            <h1>Crafting Visuals That <span class="gradient-text">Captivate</span> & Grow Brands</h1>
+            <p>I help businesses stand out in crowded markets with custom visual ecosystems, print media, and dynamic graphic compositions.</p>
+            <div class="hero-btns">
+                <a href="#work" class="btn btn-filled">Explore Portfolio</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
         </div>
     </header>
 
     <main id="work" class="portfolio-section">
-        <div class="section-title">
-            <h2>Featured Ecosystem Showcase</h2>
-            <p>Click a leaf to filter projects or scroll down to observe the designs</p>
+        <div class="section-header">
+            <h2>Featured Creations</h2>
+            <p>Hover or tap a card to watch the design details unfold naturally.</p>
         </div>
 
         <div class="portfolio-grid">
-            
-            <div class="project-card" data-category="packaging">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <span class="card-tag">Packaging</span>
-                        <h3>itel Energy Drink</h3>
-                        <p>Power Up Campaign</p>
-                    </div>
-                    <div class="card-back">
-                        <p>Dynamic 3D product rendering and structural label design focusing on raw, electric energy dynamics.</p>
-                        <span class="view-project">View Design →</span>
-                    </div>
+            <div class="project-card">
+                <div class="card-image-placeholder img-itel">
+                    <span class="tag">Packaging</span>
+                </div>
+                <div class="card-content">
+                    <h3>itel Energy Drink</h3>
+                    <p>Dynamic product render and high-impact structural layout balancing raw energy with clean, modern product visuals.</p>
                 </div>
             </div>
 
-            <div class="project-card" data-category="event">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <span class="card-tag">Event Poster</span>
-                        <h3>22nd Anniversary</h3>
-                        <p>Winning Praise Theme</p>
-                    </div>
-                    <div class="card-back">
-                        <p>A grand, celebratory composition mixing gold typography with energetic musical motifs.</p>
-                        <span class="view-project">View Design →</span>
-                    </div>
+            <div class="project-card">
+                <div class="card-image-placeholder img-praise">
+                    <span class="tag">Event Poster</span>
+                </div>
+                <div class="card-content">
+                    <h3>Winning Praise</h3>
+                    <p>Celebratory 22nd-anniversary design mixing ornate gold typography with high-contrast ambient festival backdrops.</p>
                 </div>
             </div>
 
-            <div class="project-card" data-category="creative">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <span class="card-tag">Creative Manip</span>
-                        <h3>Welcome to the Jungle</h3>
-                        <p>Streetwear & Culture Showcase</p>
-                    </div>
-                    <div class="card-back">
-                        <p>High-contrast urban collage blending industrial realism with modern street fashion aesthetics.</p>
-                        <span class="view-project">View Design →</span>
-                    </div>
+            <div class="project-card">
+                <div class="card-image-placeholder img-jungle">
+                    <span class="tag">Creative Composition</span>
+                </div>
+                <div class="card-content">
+                    <h3>Welcome to the Jungle</h3>
+                    <p>Urban lifestyle poster project focusing on intricate digital collage techniques and streetwear visual culture.</p>
                 </div>
             </div>
 
-            <div class="project-card" data-category="editorial">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <span class="card-tag">Editorial Series</span>
-                        <h3>Daily Chaos</h3>
-                        <p>Being Creative Series</p>
-                    </div>
-                    <div class="card-back">
-                        <p>Bold typography-driven visual examining the psychological realities of the modern creator ecosystem.</p>
-                        <span class="view-project">View Design →</span>
-                    </div>
+            <div class="project-card">
+                <div class="card-image-placeholder img-chaos">
+                    <span class="tag">Editorial Series</span>
+                </div>
+                <div class="card-content">
+                    <h3>The Daily Chaos</h3>
+                    <p>Typography-focused conceptual layout examining the balance of structure and raw intuition in creative workflows.</p>
                 </div>
             </div>
-
         </div>
     </main>
 
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Let's Grow Together</h2>
+            <p>Reach out through any platform in my digital ecosystem to start collaborating.</p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="https://instagram.com/okikiolagraphic" target="_blank" class="contact-card insta-card">
+                <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+                <h3>Instagram</h3>
+                <p>@okikiolagraphic</p>
+                <span class="go-link">Follow Feed →</span>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" class="contact-card linkedin-card">
+                <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                <h3>LinkedIn</h3>
+                <p>Emmanuel Okikiola</p>
+                <span class="go-link">Connect Professionally →</span>
+            </a>
+
+            <a href="https://youtube.com" target="_blank" class="contact-card youtube-card">
+                <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
+                <h3>YouTube</h3>
+                <p>Design Workflows</p>
+                <span class="go-link">Watch Breakdown →</span>
+            </a>
+
+            <a href="tel:+2347047586595" class="contact-card phone-card">
+                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                <h3>Direct Line</h3>
+                <p>+234 704 758 6595</p>
+                <span class="go-link">Call or WhatsApp →</span>
+            </a>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2026 okikiolagraphic. All rights preserved under creative licenses.</p>
+        <p>&copy; 2026 okikiolagraphic. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+</html>
 </html> 
