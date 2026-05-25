@@ -1,37 +1,34 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Smooth Reveal Flip Animation on Click
-    const cards = document.querySelectorAll('.project-card');
+    // 1. Mobile Menu Toggle System
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-item');
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            card.classList.toggle('flipped');
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
         });
-    });
 
-    // 2. Parallax Motion for Nature Background Elements based on Scroll
+        // Close menu instantly when a navigation item link is tapped
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
+
+    // 2. Interactive Natural Scroll Parallax for Blobs
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        const orb1 = document.querySelector('.orb-1');
-        const orb2 = document.querySelector('.orb-2');
+        const purpleBlob = document.querySelector('.blob-purple');
+        const magentaBlob = document.querySelector('.blob-magenta');
 
-        // Gently shifts natural orbs to follow scroll pattern smoothly
-        if(orb1 && orb2) {
-            orb1.style.transform = `translateY(${scrolled * 0.15}px)`;
-            orb2.style.transform = `translateY(-${scrolled * 0.1}px)`;
+        if (purpleBlob && magentaBlob) {
+            purpleBlob.style.transform = `translateY(${scrolled * 0.2}px) scale(${1 + scrolled * 0.0002})`;
+            magentaBlob.style.transform = `translateY(-${scrolled * 0.15}px) scale(${1 - scrolled * 0.0001})`;
         }
     });
-
-    // 3. Header Text Reveal Effect on Load
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        heroContent.style.opacity = '0';
-        heroContent.style.transform = 'translateY(30px)';
-        heroContent.style.transition = 'opacity 1s ease, transform 1s ease';
-        
-        setTimeout(() => {
-            heroContent.style.opacity = '1';
-            heroContent.style.transform = 'translateY(0)';
-        }, 200);
-    }
 });
