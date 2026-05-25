@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Mobile Menu Toggle System
+    // 1. Mobile Menu Toggle Control Setup
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-item');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('active');
         });
 
-        // Close menu instantly when a navigation item link is tapped
+        // Close full-screen menu as soon as a navigation item is tapped
         navItems.forEach(item => {
             item.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Interactive Natural Scroll Parallax for Blobs
+    // 2. Parallax Motion for Nature Accents
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const purpleBlob = document.querySelector('.blob-purple');
